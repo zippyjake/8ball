@@ -6,4 +6,9 @@ var c = require("skilstak-colors");
 
 console.log(c.clear)
 
-console.log(c.multi("Welcome to the Magic Eightball!"));
+function print(message) {
+   //console.log(message)
+  process.stdout.write(message + "\n")
+}
+
+print(c.multi("Welcome to the Magic Eightball!"));
